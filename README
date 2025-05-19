@@ -1,0 +1,39 @@
+# 📝 Simple Note-Taking App
+
+A lightweight and minimalist web-based note-taking application built with Node.js, Express, and MongoDB. Users can add, view, and delete notes through a simple frontend interface.
+
+---
+
+## 🌐 Live Demo
+
+> _Optional: Add your deployed link here (e.g., Render, Vercel, Railway)_
+
+---
+
+## 📸 Screenshot
+
+![Note App Screenshot](https://via.placeholder.com/800x400.png?text=Simple+Note+App)
+
+---
+
+## 🚀 Features
+
+- 🧾 Add new notes
+- 📋 View all existing notes
+- ❌ Delete notes
+- 💾 MongoDB for persistent storage
+- ⚡ Simple and responsive UI using HTML/CSS/JavaScript
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Node.js, Express
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** MongoDB (local or Atlas)
+- **API:** RESTful routes
+
+---
+
+## 📁 Project Structure
+
