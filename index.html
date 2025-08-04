@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Note App</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Note App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Simple Note App</h1>
-  <form id="noteForm">
-    <input type="text" id="noteInput" placeholder="Write a note..." required />
-    <button type="submit">Add Note</button>
-  </form>
-  <ul id="noteList"></ul>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-book-open"></i> NoteKeeper</h1>
+      <p>Capture your thoughts, anytime, anywhere</p>
+    </header>
+
+    <main>
+      <form id="noteForm">
+        <div class="form-group">
+          <input type="text" id="noteInput" placeholder="Enter your note..." required>
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-plus"></i> Add Note
+          </button>
+        </div>
+        <div class="form-group">
+          <input type="text" id="searchInput" placeholder="Search notes...">
+          <select id="sortSelect">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+          </select>
+        </div>
+      </form>
+
+      <div id="noteStats">
+        <span id="totalNotes">0 notes</span>
+        <span id="lastUpdated">Never updated</span>
+      </div>
+
+      <ul id="noteList"></ul>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
